@@ -1,0 +1,33 @@
+/* css/styles.css */
+
+/* General body styling for smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom background color for about and contact sections */
+/* This is an alternative if you don't want to use Tailwind's arbitrary values */
+/* You can define custom colors in tailwind.config.js if you set up a build process */
+.bg-gray-850 {
+    background-color: #1a202c; /* Slightly lighter than gray-900 */
+}
+
+/* Ensure the Spline iframe fits responsively and covers its container */
+#spline-model-container iframe {
+    width: 100%;
+    height: 100%;
+    display: block; /* Important to remove any default iframe margins/padding */
+}
+
+/* Style for input focus (matching Tailwind focus-ring, but explicitly defined) */
+input:focus,
+textarea:focus {
+    outline: none; /* Remove default browser outline */
+    border-color: #00bcd4; /* Teal color for border */
+    box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.5); /* Teal shadow */
+}
+
+/* Project card hover effect for the image */
+.group:hover img {
+    opacity: 0.8; /* Dim the image slightly on hover */
+}
